@@ -66,7 +66,13 @@ test_arinc429: PASS
 test_can: PASS
 test_flight_control: PASS
 ```
+## Future Work
 
+- AFDX (Avionics Ethernet) communication simulation
+- ARINC653 partitioning
+- RTOS-based task scheduling (QNX / FreeRTOS)
+- Extended Kalman Filter navigation
+  
 ## Author
 **Vasan Iyer**   
 Embedded Software / Flight Controls Engineer
