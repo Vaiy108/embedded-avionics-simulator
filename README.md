@@ -1,5 +1,7 @@
 # Embedded Avionics Simulator
 
+## Embedded Avionics Communication Simulator (ARINC429 & CAN)
+
 A modular embedded C simulation of avionics communication and control software.
 - Language: C
 - Architecture: Modular Embedded System
