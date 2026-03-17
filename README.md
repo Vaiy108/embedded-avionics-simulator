@@ -1,8 +1,8 @@
-Language: C
-Architecture: Modular Embedded System
-Protocols: ARINC429, CAN
-Control: PID Altitude Hold
-Testing: Unit Tests
+- Language: C
+- Architecture: Modular Embedded System
+- Protocols: ARINC429, CAN
+- Control: PID Altitude Hold
+- Testing: Unit Tests
 
 # Embedded Avionics Simulator
 
@@ -48,3 +48,10 @@ Includes tests for:
 - CAN bus
 
 - flight control
+
+## Author
+**Vasan Iyer**  
+Embedded Software Development / Flight Controls Engineer  
+Focus: Protocols: ARINC429, CAN, Control: PID Altitude HoldFlight Dynamics, Flight controls, navigation, PID control, Embedded Software development, C.
+
+GitHub: https://github.com/Vaiy108
