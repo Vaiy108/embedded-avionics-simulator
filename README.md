@@ -48,9 +48,32 @@ Includes tests for:
 
 - flight control
 
+## Verification Results
+
+Example simulation output:
+
+```text
+Decoded altitude from ARINC429: 1200 ft
+Target altitude: 1500.0 ft
+Altitude error: 300.0 ft
+Actuator elevator command: 81
+```
+Unit test status:
+```text
+test_arinc429: PASS
+test_can: PASS
+test_flight_control: PASS
+```
+
 ## Author
-**Vasan Iyer**  
-Embedded Software Development / Flight Controls Engineer  
-Focus: Protocols: ARINC429, CAN, Control: PID Altitude HoldFlight Dynamics, Flight controls, navigation, PID control, Embedded Software development, C.
+**Vasan Iyer**   
+Embedded Software / Flight Controls Engineer
+
+Focus areas:
+- Embedded C
+- Flight controls and flight dynamics
+- Avionics protocols: ARINC 429, CAN
+- Navigation and control
+- PID-based control systems
 
 GitHub: https://github.com/Vaiy108
