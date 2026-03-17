@@ -1,0 +1,14 @@
+#ifndef PLATFORM_TYPES_H
+#define PLATFORM_TYPES_H
+
+typedef enum
+{
+    STATUS_OK = 0,
+    STATUS_ERROR,
+    STATUS_INVALID_PARAM,
+    STATUS_QUEUE_EMPTY,
+    STATUS_QUEUE_FULL,
+    STATUS_PARITY_ERROR
+} StatusCode;
+
+#endif
