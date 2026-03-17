@@ -1,0 +1,19 @@
+# Visual Studio / MSVC build artifacts
+*.obj
+*.exe
+*.ilk
+*.pdb
+*.idb
+*.lib
+*.exp
+
+# Visual Studio folders
+.vs/
+Debug/
+Release/
+x64/
+x86/
+
+# General editor/temp
+*.tmp
+*.log
