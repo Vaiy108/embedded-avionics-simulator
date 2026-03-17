@@ -1,3 +1,9 @@
+Language: C
+Architecture: Modular Embedded System
+Protocols: ARINC429, CAN
+Control: PID Altitude Hold
+Testing: Unit Tests
+
 # Embedded Avionics Simulator
 
 A modular embedded C simulation of avionics communication and control software.
