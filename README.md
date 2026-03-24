@@ -39,7 +39,7 @@ flowchart LR
 ## Build
 
 This project can be compiled with a C compiler or Visual Studio C++ compiler.
-Tests Compilation:
+#### Tests Compilation:
 - ARINC tests
 ````
 cl /EHsc /I include src\arinc429.c tests\test_arinc429.c
