@@ -38,7 +38,22 @@ flowchart LR
 
 ## Build
 
-This project can be compiled with a C compiler or Visual Studio C++ compiler.
+This project can be compiled with a C compiler or Visual Studio C++ compiler. It can be compiled using:
+````
+cl /EHsc /I include src\*.c
+````
+
+
+## Tests
+
+Includes tests for:
+
+- ARINC429
+
+- CAN bus
+
+- flight control
+
 #### Tests Compilation:
 - ARINC tests
 ````
@@ -52,16 +67,6 @@ cl /EHsc /I include src\can_bus.c tests\test_can.c
 ````
 cl /EHsc /I include src\flight_control.c tests\test_flight_control.c
 ````
-
-## Tests
-
-Includes tests for:
-
-- ARINC429
-
-- CAN bus
-
-- flight control
 
 ## Verification Results
 
