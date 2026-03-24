@@ -92,7 +92,7 @@ test_flight_control: PASS
 - Extended Kalman Filter navigation
 
 #### Disclaimer
-Educational simulator inspired by avionics software architecture, the repo uses DO-178-like practices but not a certified DO-178 artifact. 
+Designed with safety-oriented embedded software practices such as explicit status codes, defensive checks, modular interfaces, requirement-tagged comments, and unit tests.The simulator is inspired by avionics software architecture, the repo uses DO-178-like practices but not a certified DO-178 artifact. 
   
 ## Author
 **Vasan Iyer**   
