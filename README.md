@@ -41,7 +41,7 @@ flowchart LR
 
 This project can be compiled with a C compiler or Visual Studio C++ compiler.
 
-### Visual Studio Developer Command Prompt / Developer PowerShell
+#### Visual Studio Developer Command Prompt / Developer PowerShell
 
 Build main application:
 
@@ -73,20 +73,6 @@ Includes tests for:
 - CAN bus
 
 - flight control
-
-#### Tests Compilation:
-- ARINC tests
-````
-cl /EHsc /I include src\arinc429.c tests\test_arinc429.c
-````
-- CAN test
-````
-cl /EHsc /I include src\can_bus.c tests\test_can.c
-````
-- Flight control test
-````
-cl /EHsc /I include src\flight_control.c tests\test_flight_control.c
-````
 
 ## Verification Results
 
