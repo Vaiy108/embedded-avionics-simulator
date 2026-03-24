@@ -1,3 +1,8 @@
+/**
+ * @file main.c
+ * @brief Main integration of avionics simulator.
+ */
+
 #include <stdio.h>
 #include <stdint.h>
 #include "platform_types.h"

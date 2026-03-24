@@ -1,3 +1,8 @@
+/**
+ * @file can_bus.c
+ * @brief CAN bus simulation module.
+ */
+
 #include "can_bus.h"
 
 /**

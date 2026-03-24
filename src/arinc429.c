@@ -1,3 +1,8 @@
+/**
+ * @file arinc429.c
+ * @brief ARINC429 encoding and decoding.
+ */
+
 #include "arinc429.h"
 
 /**

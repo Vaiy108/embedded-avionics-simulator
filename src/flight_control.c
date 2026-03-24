@@ -1,3 +1,8 @@
+/**
+ * @file flight_control.c
+ * @brief PID-based flight control.
+ */
+
 #include "flight_control.h"
 
 /**
@@ -5,7 +10,7 @@
  */
 static float clamp(float value, float min_val, float max_val)
 {
-    if (value < min_val)
+    if (value < min_val)  // Limit output to actuator bounds
     {
         return min_val;
     }
