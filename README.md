@@ -22,6 +22,20 @@ flowchart LR
     C --> T[Telemetry Node]
     D --> E[Elevator Actuator]
 ```
+
+## System Architecture
+
+```mermaid
+flowchart LR
+    S[Altitude Sensor<br/>Sensor Simulator] -->|ARINC429 Message| A[ARINC429 Driver]
+    A --> B[System Message Bus]
+    B --> F[Flight Control Unit<br/>PID Controller]
+    B --> M[Monitoring Module]
+    F -->|CAN Message| C[CAN Bus]
+    C --> D[Actuator Driver]
+    C --> T[Telemetry Node]
+    D --> E[Elevator Actuator]
+```
 ## Features
 
 - ARINC429 encoding and decoding
