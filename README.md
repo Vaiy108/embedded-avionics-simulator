@@ -23,19 +23,6 @@ flowchart LR
     D --> E[Elevator Actuator]
 ```
 
-## System Architecture
-
-```mermaid
-flowchart LR
-    S[Altitude Sensor<br/>Sensor Simulator] -->|ARINC429 Message| A[ARINC429 Driver]
-    A --> B[System Message Bus]
-    B --> F[Flight Control Unit<br/>PID Controller]
-    B --> M[Monitoring Module]
-    F -->|CAN Message| C[CAN Bus]
-    C --> D[Actuator Driver]
-    C --> T[Telemetry Node]
-    D --> E[Elevator Actuator]
-```
 ## Features
 
 - ARINC429 encoding and decoding
@@ -52,10 +39,29 @@ flowchart LR
 
 ## Build
 
-This project can be compiled with a C compiler or Visual Studio C++ compiler. It can be compiled using:
-````
-cl /EHsc /I include src\*.c
-````
+This project can be compiled with a C compiler or Visual Studio C++ compiler.
+
+### Visual Studio Developer Command Prompt / Developer PowerShell
+
+Build main application:
+
+```bat
+cl /EHsc /I include src\main.c src\arinc429.c src\can_bus.c src\flight_control.c src\sensor_sim.c src\actuator.c src\system_bus.c
+```
+
+Build tests:
+- ARINC429
+```bat
+cl /EHsc /I include tests\test_arinc429.c src\arinc429.c
+```
+- CAN test
+```
+cl /EHsc /I include tests\test_can.c src\can_bus.c
+```
+- Flight control test
+```
+cl /EHsc /I include tests\test_flight_control.c src\flight_control.c
+```
 
 
 ## Tests
@@ -105,7 +111,7 @@ test_flight_control: PASS
 - RTOS-based task scheduling (QNX / FreeRTOS)
 - Extended Kalman Filter navigation
 
-#### Disclaimer
+#### Note
 Designed with safety-oriented embedded software practices such as explicit status codes, defensive checks, modular interfaces, requirement-tagged comments, and unit tests.The simulator is inspired by avionics software architecture, the repo uses DO-178-like practices but not a certified DO-178 artifact. 
   
 ## Author
