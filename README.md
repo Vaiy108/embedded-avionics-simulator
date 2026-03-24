@@ -39,6 +39,19 @@ flowchart LR
 ## Build
 
 This project can be compiled with a C compiler or Visual Studio C++ compiler.
+Tests Compilation:
+- ARINC tests
+````
+cl /EHsc /I include src\arinc429.c tests\test_arinc429.c
+````
+- CAN test
+````
+cl /EHsc /I include src\can_bus.c tests\test_can.c
+````
+- Flight control test
+````
+cl /EHsc /I include src\flight_control.c tests\test_flight_control.c
+````
 
 ## Tests
 
@@ -72,6 +85,9 @@ test_flight_control: PASS
 - ARINC653 partitioning
 - RTOS-based task scheduling (QNX / FreeRTOS)
 - Extended Kalman Filter navigation
+
+#### Disclaimer
+Educational simulator inspired by avionics software architecture, the repo uses DO-178-like practices but not a certified DO-178 artifact. 
   
 ## Author
 **Vasan Iyer**   
