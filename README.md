@@ -2,7 +2,7 @@
 
 ## Embedded Avionics Communication Simulator (ARINC429 & CAN)
 
-A modular embedded C simulation of avionics communication and control software.
+A modular embedded C simulation of avionics communication and control software. Includes both modular simulation and task-based real-time extension
 - Language: C
 - Architecture: Modular Embedded System
 - Protocols: ARINC429, CAN
@@ -90,6 +90,20 @@ test_arinc429: PASS
 test_can: PASS
 test_flight_control: PASS
 ```
+
+## Real-Time Extension
+
+A task-based simulation was added to approximate real-time embedded behavior.
+
+The system includes:
+- Sensor task (100 ms)
+- Flight control task (50 ms)
+- Actuator task (100 ms)
+
+Tasks communicate using message queues and run concurrently using threads.
+
+This demonstrates a simplified RTOS-style architecture.
+
 ## Future Work
 
 - AFDX (Avionics Ethernet) communication simulation
